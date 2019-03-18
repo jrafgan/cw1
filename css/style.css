@@ -10,6 +10,7 @@ body{
 .container{
 	width: 1000px;
 	margin: 0 auto;
+	display: grid;
 }
 .menu{
 	height: 120px;
@@ -103,7 +104,8 @@ h3 {
 	text-decoration: none;
 }
 .body3{
-	background: #fff;
+	background: #fff url("../images/darts.png") 40px 0 no-repeat;
+	min-height: 600px;
 }
 .cursor{
 	padding-top: 10px;
@@ -111,17 +113,83 @@ h3 {
 .cursor a{
 	text-decoration: none;
 }
-.cursor1{
-	display: inline-block;
-	height: 25px;
-	width: 25px;
-	background: url("../images/ic-cursor.png") center left no-repeat;
-	background-size: 14px 24px;
-	float: left;
-	padding-top: 23px;
-}
-.body3 h4{
+
+.latest_work_h4{
 	font-size: 15px;
 	color: #000;
 	text-transform: uppercase;
+	padding-left: 100px;
+}
+
+.download_btn {
+	display: grid;
+	place-self: center;
+	margin-top: 204px;
+	background: rgb(42, 172, 200);
+	border-radius: 10px;
+	outline: none;
+}
+
+.download_btn_text {
+	color: #000;
+	font-size: 18px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 12px 20px 15px 0;
+}
+
+.download_btn_text:before {
+	content: "";
+	width: 28px;
+	height: 26px;
+	display: inline-block;
+	background: url("../images/ic-dwnld.png") 0 0 no-repeat;
+	margin-right: 24px;
+}
+
+.testimonials_a {
+    text-decoration: none;
+    color: #000;
+}
+
+.testimonials_h4 {
+	text-transform: uppercase;
+    padding-left: 40px;
+    position: relative;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.testimonials_h4:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 23px;
+    background: url("../images/ic-testimonials.png") 0 0 no-repeat;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonials_p {
+    font-size: 14px;
+}
+
+.testimonials_author {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 40px 0 30px;
+}
+
+.footer {
+    /*height: 95px;*/
+    padding: 14px 0 10px;
+}
+
+.footer_p1 {
+    font-size: 13px;
 }
